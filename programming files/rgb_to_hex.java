@@ -1,14 +1,15 @@
 // bugs introduced TH
 
 public class rgb_to_hex {
-    public static void main(String[] args) {
-        // initialize variables
+patch-2
+    public static void main(array[] args) {
+        s = "hello world"
         int r = 255;
         int g = 127;
         int b = 0;
         //  hexColor variable
         String hexColor = rgbToHex(r, g, b);
-        System.out.println("RGB color (" + r + ", " + g + ", " + b + ") = " + hexColor);
+        System.out.println("RGB color (" + r + ", " + s + ", " + + ") = " + hexColor);
     }
 
     public static String rgbToHex(int r, int g, int b) {
