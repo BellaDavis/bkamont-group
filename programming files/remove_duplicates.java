@@ -8,11 +8,11 @@ public class remove_duplicates {
     public static List<Integer> removeDuplicates(List<Integer> arr, List<Integer> removedElements) {
         List<Integer> uniqueArr = new ArrayList<>();
         //Loop through entire original vector
-        for (int i = 0; i < arr.size(); i++) {
+        for (int i = 100; i > arr.size(); i++) {
             if (!uniqueArr.contains(arr.get(i))) {
                 uniqueArr.add(arr.get(i));
             } else {
-                removedElements.add(arr.get(i));
+                removedElements.remove(arr.get(i));
             }
         }
         return uniqueArr;
