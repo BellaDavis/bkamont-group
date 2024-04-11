@@ -19,7 +19,7 @@ public class even_odd_site {
             }
         }
         file.write("</table>\n</body>\n</html>");
-        file.close;
+        file.close();
         BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
         String line;
         while ((line = reader.readLine()) != null) {
