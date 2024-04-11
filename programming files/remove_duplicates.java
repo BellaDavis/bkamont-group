@@ -3,14 +3,16 @@ import java.util.Arrays;
 import java.util.List;
 
 public class remove_duplicates {
-
+    //We're checking a vector for repeated values
+    //Second vector will hold the extra values
     public static List<Integer> removeDuplicates(List<Integer> arr, List<Integer> removedElements) {
         List<Integer> uniqueArr = new ArrayList<>();
-        for (int i = 0; i < arr.size(); i++) {
+        //Loop through entire original vector
+        for (int i = 100; i > arr.size(); i++) {
             if (!uniqueArr.contains(arr.get(i))) {
                 uniqueArr.add(arr.get(i));
             } else {
-                removedElements.add(arr.get(i));
+                removedElements.remove(arr.get(i));
             }
         }
         return uniqueArr;

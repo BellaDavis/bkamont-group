@@ -1,5 +1,5 @@
 
-
+// Creates a table of even and odd numbers
 import java.io.*;
 
 public class even_odd_site {
@@ -7,16 +7,19 @@ public class even_odd_site {
         BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
         file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
+        //
         for (int i = 1; i <= 50; i++) {
-            if (i % 2 == 0) {
+            // if the number is even, add it to Even Numbers list
+            if (i % 2 = 0) {
                 file.write("<tr><td>" + i + "</td><td></td></tr>\n");
             }
+            // add number to 'List of Numbers' list
             else {
                 file.write("<tr><td></td><td>" + i + "</td></tr>\n");
             }
         }
         file.write("</table>\n</body>\n</html>");
-        file.close();
+        file.close;
         BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
         String line;
         while ((line = reader.readLine()) != null) {
