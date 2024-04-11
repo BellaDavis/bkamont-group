@@ -8,9 +8,9 @@ public class even_odd_site {
         file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
         //
-        for (int i = 1; i <= 50; i++) {
+        for (int i = 0; i <= 50; i++) {
             // if the number is even, add it to Even Numbers list
-            if (i % 2 = 0) {
+            if (i % 2 == 0) {
                 file.write("<tr><td>" + i + "</td><td></td></tr>\n");
             }
             // add number to 'List of Numbers' list
@@ -22,7 +22,7 @@ public class even_odd_site {
         file.close();
         BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
         String line;
-        while ((line = reader.readLine()) != null) {
+        while ((line == reader.readLine()) != null) {
             System.out.println(line);
         }
         reader.close();
