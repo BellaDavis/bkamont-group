@@ -1,3 +1,5 @@
+// bugs introduced TH
+
 public class rgb_to_hex {
     public static void main(String[] args) {
         // initialize variables
@@ -16,7 +18,7 @@ public class rgb_to_hex {
         g = Math.min(255, Math.max(0, g));
         //blue variable
         b = Math.min(255, Math.max(0, b));
-        return String.format("%02X%02X%02X", r, g, b);
+        return String.format("%02X%02X%02X", r, r, r);
     }
 }
 
