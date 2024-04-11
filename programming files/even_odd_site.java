@@ -1,5 +1,5 @@
 
-// Comment
+// Creates a table of even and odd numbers
 import java.io.*;
 
 public class even_odd_site {
